@@ -1,0 +1,4 @@
+/*Reducimos el tamaño de todo el texto, frente a 40px del simple.css o 42px del white.css */
+.reveal {
+  font-size: 30px;
+}

@@ -1,0 +1,217 @@
+= Unidad 5: Circuitos electrónicos digitales.
+Francisco L. Servén <fserven@iesmanacor.cat>
+:revealjs_theme: moon
+:revealjs_slideNumber: h.v
+:revealjs_width: 1366
+:revealjs_height: 768
+:revealjs_margin: 0.1
+:revealjs_minScale: 0.2
+:revealjs_maxScale: 1.5
+:revealjs_pdfseparatefragments: false
+:revealjs_disablelayout: false
+:customcss: css/paco.css
+:icons: font
+:imagesdir: img
+:reproducible:
+:listing-caption: Listing
+:table-caption!:
+:source-highlighter: rouge
+:toc:
+:toc-title: Lista de contenidos
+// Uncomment next line to add a title page (or set doctype to book)
+//:title-page:
+// Uncomment next line to set page size (default is A4)
+//:pdf-page-size: Letter
+
+
+== Introducción a las técnicas digitales. 
+=== Señál analógica - Señal digital
+
+image::analogico_digital.png[Señales analógica y digital, width=500, align=center]
+
+*Señal analógica:* entre dos valores cualesquiera existen infinitos valores posibles.
+
+*Señal digital:* sólo puede tomar un número determinado (finito) de valores.
+
+=== Algunas ventajas de la señal digital
+
+* Facilidad de diseño de los circuitos.
+* Existen sistemas de detección y corrección de errores.
+* Utilización de sistemas programables para distintas funciones.
+* La señal digital puede copiarse numerosas veces sin pérdidas ni deterioro.
+
+=== Conversión
+
+[title="Conversión analógico-digital. (Imagen de Jmcalderon - Dominio público)"]
+image::Conversor_AD.svg[Conversión A/D, width=700, align=center]
+
+[title="Conversión digital-analógica. (Imagen de Juananpc - CC BY-SA 3.0)"]
+image::Diagrama_CDA.jpg[Conversión D/A, width=700, align=center]
+
+=== Sistemas de numeración.
+
+Visita https://wbt.siemens.com/sitrain/LOGO-BASIC_ES/story_html5.html?lms=1[esta web de LOGO,role=external,window=_blank] y pincha en el tema "Tecnología de control digital".
+
+[link=https://wbt.siemens.com/sitrain/LOGO-BASIC_ES/story_html5.html?lms=1,role=external,window=_blank]
+image::web_de_Logo.png[Web de LOGO, width=700, align=center]
+
+=== Sistemas de numeración (cont.).
+
+Sistema de numeración:: es un conjunto de símbolos y reglas de generación que permiten construir todos los números válidos.
+
+Sistemas de numeración posicionales:: En ellos el valor de un dígito depende tanto del símbolo utilizado, como de la posición que ese símbolo ocupa en el número.
+
+Base:: Si un sistema de numeración posicional tiene *base* _b_ significa que disponemos de _b_ símbolos diferentes para escribir los números.
+
+//[cols="2,3,^1,5,^1"]
+//[%autowidth]
+[cols="~,~,^~,~,^~"]
+|===
+|Sistema     |                              |Base|  Símbolos                                      |Ejemplo
+
+|decimal     |El que usamos normalmente     | 10 | 0, 1, 2, 3, 4, 5, 6, 7, 8, 9                   |  12   
+
+|binario  .3+.^|Útil en tecnologías digitales |  2 | 0, 1                                           | 1100  
+
+|octal                                      ^|  8 <| 0, 1, 2, 3, 4, 5, 6, 7                         ^| 14
+
+|hexadecimal                                ^| 16 <| 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F ^| C
+
+|===
+
+=== Conversión entre sistemas de numeración.
+
+image::decimal_a_binario.png[Decimal a binario, width=500]
+
+image::binario_a_decimal.png[Binario a decimal, width=500]
+
+*Conversión entre binario y octal*:: Se sustituye cada dígito octal por su correspondencia en binario expresado con 3 dígitos, o viceversa.
+
+image::conversor-numerico-octal-a-binario-tabla1-img.png[Tabla binario-octal, align=center, width="70%"]
+
+image::conversor-numerico-octal-a-binario-ejemplo-img.png[Ejemplo binario-octal, align=center, width="70%"]
+
+
+*Conversión entre binario y hexadecimal*:: Se sustituye cada dígito hexadecimal por su correspondencia en binario expresado con 4 dígitos, o viceversa.
+
+image::conversor-numerico-hexadecimal-a-binario-tabla1-img.png[Tabla binario-hexadecimal, align=center, width="70%"]
+
+image::conversor-numerico-hexadecimal-a-binario-ejemplo1-img.png[Ejemplo binario-hexadecimal, align=center, width="70%"]
+
+=== Código BCD (Binary Coded Decimal)
+* NO es un sistema de numeración.
+* Es un método para codificar cifras, no números completos.
+* Para *codificar* un número decimal se sustituye cada una de sus cifras por su equivalente binario de 4 bits.
+* Muy común en sistemas electrónicos donde se debe mostrar un valor numérico.
+
+image::Seven_segment_display-animated.gif[Display 7 segmentos, width=100, align=center]
+
+.Representación binaria de cada dígito decimal:
+[cols=11*~]
+|===
+
+|Decimal:    ^|0     ^|1     ^|2     ^|3     ^|4     ^|5     ^|6     ^|7     ^|8     ^|9
+|BCD:      ^|0000  ^|0001  ^|0010  ^|0011  ^|0100  ^|0101  ^|0110  ^|0111  ^|1000  ^|1001
+|===
+
+=== Código Gray
+
+Dos números consecutivos difieren solamente en uno de sus dígitos.
+
+image::Gray.png[Código Gray, width=700, align=center]
+
+== Simbología de elementos digitales.
+
+image::puertas-logicas.png[Puertas lógicas, align=center]
+
+== Análisis de circuitos con puertas lógicas.
+=== Tipos de puertas lógicas. 
+
+Una *puerta lógica* es un dispositivo electrónico básico cuya función es la de implementar funciones lógicas.
+
+=== NOT, OR, AND, NOR, NAND y EXOR.
+
+== Circuitos lógicos combinacionales. 
+
+Un *circuito combinacional* es un circuito electrónico, en el que el valor de sus salidas en un determinado 
+instante, dependen del valor de las entradas en ese mismo instante. Es decir, es un circuito que carece de 
+memoria. Trabajan con números, y con la tecnología con la que están realizados, estos números están 
+representados en binario. Cada salida está relacionada con las entradas a través de una función booleana.
+
+=== Codificadores y decodificadores.
+
+Los *codificadores* son circuitos que codifican en forma binaria la información que se le aplica a su entrada, 
+teniendo en cuenta que la información de entrada debe ser numérica o alfanumérica. Están compuestos 
+por 2^n^ entradas y "n" salidas.
+
+Un *decodificador* es un circuito combinacional, que en su forma más general, posee "n" entradas y 2^n^ salidas 
+digitales, donde sólamente una de las salidas puede estar activa permaneciendo el resto en reposo.
+
+image::Decodificador.jpg[Decodificador,width=700, align=center]
+
+Cada combinación de las variables de entrada representa un número binario y activa una y sólo una de las
+ salidas, aquella que corresponde al número decimal equivalente al código binario de entrada.
+
+=== Multiplexores y demultiplexores. 
+
+Un *multiplexor* es un circuito combinacional al que entran varios canales de datos, y sólo uno de ellos, el que 
+hallamos seleccionado, es el que aparece por la salida. Es decir, es un circuito que nos permite seleccionar qué 
+datos pasan a través de dicho componente.
+
+Un multiplexor en un circuito combinacional con 2^n^ número de entradas, "n" entradas de selección y una salida 
+de información.
+
+Para denominar a los multiplexores es habitual hacer referencia al número de entradas de datos y salidas, así un 
+multiplexor de 8 entradas de información, 3 de selección y 1 salida es un multiplexor 8:1.
+
+El concepto de *demultiplexor (DEMUX)* es similar al de multiplexor, viendo las entradas de datos como salidas 
+y la salida como entradas.
+
+En los demultiplexores hay un único canal de entrada que sale por una de las múltiples salidas, y sólo una. Las 
+entradas de selección "n" definen cual es la línea de salida por la que debe salir el dato de entrada. Por lo que 
+el número de salidas 2^n^, depende de "n" que es el número de entradas de selección.
+
+=== Comparadores.
+
+Definición de comparadores.
+
+== Circuitos lógicos secuenciales. 
+=== Biestables.
+
+
+
+////
+== Introduuuuuuuuuuuuction
+
+A paragraph followed by an unordered list{empty}footnote:[AsciiDoc supports unordered, ordered, and description lists.] with square bullets.footnote:[You may choose from square, disc, and circle for the bullet style.]
+
+[square]
+* item 1
+* item 2
+* item 3
+
+== Main
+
+Here's how you say "`Hello, World!`" in Prawn:
+
+.Create a basic PDF document using Prawn
+[source,ruby]
+----
+require 'prawn'
+
+Prawn::Document.generate 'example.pdf' do
+  text 'Hello, World!'
+end
+----
+== Ecuaciones
+
+Esta es una prueba de una ecuación LaTex:
+
+latexmath:[$C = \alpha + \beta Y^{\gamma} + \epsilon$]
+
+¿Se ve?
+
+== Conclusion
+
+That's all, folks!
+////
