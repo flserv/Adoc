@@ -140,17 +140,16 @@ representados en binario. Cada salida está relacionada con las entradas a trav�
 
 === Codificadores y decodificadores.
 
-Los *codificadores* son circuitos que codifican en forma binaria la información que se le aplica a su entrada, 
-teniendo en cuenta que la información de entrada debe ser numérica o alfanumérica. Están compuestos 
-por 2^n^ entradas y "n" salidas.
+Los *codificadores* son circuitos que codifican en forma binaria la información que se le aplica a su entrada.
+Cuando se activa una de sus entradas aparece a la salida el código binario correspondiente a la entrada 
+que se ha activado. Están compuestos por 2^n^ entradas y "n" salidas.
 
 Un *decodificador* es un circuito combinacional, que en su forma más general, posee "n" entradas y 2^n^ salidas 
 digitales, donde sólamente una de las salidas puede estar activa permaneciendo el resto en reposo.
-
-image::Decodificador.jpg[Decodificador,width=700, align=center]
-
 Cada combinación de las variables de entrada representa un número binario y activa una y sólo una de las
  salidas, aquella que corresponde al número decimal equivalente al código binario de entrada.
+
+image::Decodificador.jpg[Decodificador,width=700, align=center]
 
 === Multiplexores y demultiplexores. 
 
