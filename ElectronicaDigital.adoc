@@ -155,7 +155,7 @@ Cada combinación de las variables de entrada representa un número binario y ac
 === Multiplexores y demultiplexores. 
 
 Un *multiplexor* es un circuito combinacional al que entran varios canales de datos, y sólo uno de ellos, el que 
-hallamos seleccionado, es el que aparece por la salida. Es decir, es un circuito que nos permite seleccionar qué 
+hayamos seleccionado, es el que aparece por la salida. Es decir, es un circuito que nos permite seleccionar que 
 datos pasan a través de dicho componente.
 
 Un multiplexor en un circuito combinacional con 2^n^ número de entradas, "n" entradas de selección y una salida 
