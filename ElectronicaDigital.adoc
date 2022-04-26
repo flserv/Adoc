@@ -18,6 +18,7 @@ Francisco L. Servén <fserven@iesmanacor.cat>
 :source-highlighter: rouge
 :toc:
 :toc-title: Lista de contenidos
+:figure-caption!:
 // Uncomment next line to add a title page (or set doctype to book)
 //:title-page:
 // Uncomment next line to set page size (default is A4)
@@ -158,9 +159,15 @@ Cada combinación de las variables de entrada representa un número binario y ac
 
 image::Decodificador.jpg[Decodificador,width=700, align=center]
 
-image::codificador_4a2.png[Codificador 4:2,width=200, align=center]
-
-image::tabla_verdad_codificador_4a2.png[Tabla de verdad del codificador 4:2, width=300, align=center]
+[cols="2*^.^a"]
+|===
+|Codificador 4:2
+|Tabla de verdad
+|
+image::codificador_4a2.png[Codificador 4:2,width=200]
+|
+image::tabla_verdad_codificador_4a2.png[Tabla de verdad del codificador 4:2, width=300]
+|===
 
 === Multiplexores y demultiplexores. 
 
