@@ -140,16 +140,27 @@ representados en binario. Cada salida está relacionada con las entradas a trav�
 
 === Codificadores y decodificadores.
 
-Los *codificadores* son circuitos que codifican en forma binaria la información que se le aplica a su entrada.
-Cuando se activa una de sus entradas aparece a la salida el código binario correspondiente a la entrada 
-que se ha activado. Están compuestos por 2^n^ entradas y "n" salidas.
+Los *codificadores* son circuitos que codifican en forma binaria la información 
+que se le aplica a su entrada. Cuando se activa una de sus entradas, aparece a 
+la salida el código binario correspondiente a la entrada que se ha activado. Están 
+compuestos por _2^n^_ entradas y _n_ salidas.
 
-Un *decodificador* es un circuito combinacional, que en su forma más general, posee "n" entradas y 2^n^ salidas 
+Para evitar problemas cuando dos entradas del decodificador están activas se emplean 
+los llamados _codificadores con prioridad_ o _codificadores prioritarios_. En éstos cuando 
+más de una entrada está activada será la de más peso la que determinará el código de salida. 
+Para denominar a los codificadores se puede emplear el sistema de referirse a su número de 
+entradas y de salidas; así un decodificador que tuviera 4 entradas y 2 salidas sería un _codificador 4:2_.
+
+Un *decodificador* es un circuito combinacional, que en su forma más general, posee _n_ entradas y _2^n^_ salidas 
 digitales, donde sólamente una de las salidas puede estar activa permaneciendo el resto en reposo.
 Cada combinación de las variables de entrada representa un número binario y activa una y sólo una de las
  salidas, aquella que corresponde al número decimal equivalente al código binario de entrada.
 
 image::Decodificador.jpg[Decodificador,width=700, align=center]
+
+image::codificador_4a2.png[Codificador 4:2,width=200, align=center]
+
+image::tabla_verdad_codificador_4a2.png[Tabla de verdad del codificador 4:2, width=300, align=center]
 
 === Multiplexores y demultiplexores. 
 
@@ -157,18 +168,18 @@ Un *multiplexor* es un circuito combinacional al que entran varios canales de da
 hayamos seleccionado, es el que aparece por la salida. Es decir, es un circuito que nos permite seleccionar que 
 datos pasan a través de dicho componente.
 
-Un multiplexor en un circuito combinacional con 2^n^ número de entradas, "n" entradas de selección y una salida 
+Un multiplexor en un circuito combinacional con _2^n^_ número de entradas, _n_ entradas de selección y una salida 
 de información.
 
 Para denominar a los multiplexores es habitual hacer referencia al número de entradas de datos y salidas, así un 
-multiplexor de 8 entradas de información, 3 de selección y 1 salida es un multiplexor 8:1.
+multiplexor de 8 entradas de información, 3 de selección y 1 salida es un _multiplexor 8:1_.
 
 El concepto de *demultiplexor (DEMUX)* es similar al de multiplexor, viendo las entradas de datos como salidas 
 y la salida como entradas.
 
 En los demultiplexores hay un único canal de entrada que sale por una de las múltiples salidas, y sólo una. Las 
-entradas de selección "n" definen cual es la línea de salida por la que debe salir el dato de entrada. Por lo que 
-el número de salidas 2^n^, depende de "n" que es el número de entradas de selección.
+entradas de selección _n_ definen cual es la línea de salida por la que debe salir el dato de entrada. Por lo que 
+el número de salidas _2^n^_, depende de _n_ que es el número de entradas de selección.
 
 === Comparadores.
 
