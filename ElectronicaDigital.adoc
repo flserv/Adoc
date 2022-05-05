@@ -190,7 +190,19 @@ el número de salidas _2^n^_, depende de _n_ que es el número de entradas de se
 
 === Comparadores.
 
-Definición de comparadores.
+Un *comparador* es un circuito combinacional cuya función es la de comparar dos magnitudes binarias para determinar su relación.
+
+Existen distintos tipos de comparadores, los que simplemente determinan si dos números son iguales y los que además, en caso de no serlo, indican cual de los dos es mayor. El número de bits del comparador indica la longitud de los datos que compara.
+Los comparadores más comunes son aquellos que permiten comparar dos palabras de 4 bits. Así, si la comparación debe ser entre palabras de 8 bits, lo que hacemos es poner en cascada dos comparadores de 4 bits.
+
+Normalmente tienen 3 salidas:
+*A>B, indica que la palabra A es mayor que la B.
+*A=B, indica que ambas palabras tienen el mismo peso o son iguales.
+*A<B, indica que la palabra A es de menor peso o menor que B.
+
+image::comparador_7485.png[Comparador 7485, width=300]
+170
+
 
 == Circuitos lógicos secuenciales. 
 === Biestables.
