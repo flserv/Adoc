@@ -196,12 +196,13 @@ Existen distintos tipos de comparadores, los que simplemente determinan si dos n
 Los comparadores más comunes son aquellos que permiten comparar dos palabras de 4 bits. Así, si la comparación debe ser entre palabras de 8 bits, lo que hacemos es poner en cascada dos comparadores de 4 bits.
 
 Normalmente tienen 3 salidas:
-*A>B, indica que la palabra A es mayor que la B.
-*A=B, indica que ambas palabras tienen el mismo peso o son iguales.
-*A<B, indica que la palabra A es de menor peso o menor que B.
 
-image::comparador_7485.png[Comparador 7485, width=300]
-170
+* A>B, indica que la palabra A es mayor que la B.
+* A=B, indica que ambas palabras tienen el mismo peso o son iguales.
+* A<B, indica que la palabra A es de menor peso o menor que B.
+
+image::comparador_7485.png[Comparador 7485, width=300, align=centre]
+
 
 
 == Circuitos lógicos secuenciales. 
