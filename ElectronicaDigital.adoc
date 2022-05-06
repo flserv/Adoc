@@ -197,15 +197,18 @@ Los comparadores más comunes son aquellos que permiten comparar dos palabras de
 
 Normalmente tienen 3 salidas:
 
-* A>B, indica que la palabra A es mayor que la B.
-* A=B, indica que ambas palabras tienen el mismo peso o son iguales.
-* A<B, indica que la palabra A es de menor peso o menor que B.
+* *A>B* indica que la palabra A es mayor que la B.
+* *A=B* indica que ambas palabras tienen el mismo peso o son iguales.
+* *A<B* indica que la palabra A es de menor peso o menor que B.
 
-image::comparador_7485.png[Comparador 7485, width=300, align=centre]
+image::comparador_7485.png[Comparador 7485, width=300, align=center, title=Comparador de 4 bits.]
 
 
 
 == Circuitos lógicos secuenciales. 
+
+A diferencia de los sistemas combinacionales, en los *sistemas secuenciales* los valores de las salidas, en un momento dado, no dependen exclusivamente de los valores de las entradas en dicho momento, sino que también dependen del estado anterior o estado interno.
+
 === Biestables.
 
 
