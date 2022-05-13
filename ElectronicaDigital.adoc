@@ -82,9 +82,9 @@ Base:: Si un sistema de numeración posicional tiene *base* _b_ significa que di
 
 === Conversión entre sistemas de numeración.
 
-image::decimal_a_binario.png[Decimal a binario, width=500]
+image::decimal_a_binario.png[Decimal a binario, width=500, align=center]
 
-image::binario_a_decimal.png[Binario a decimal, width=500]
+image::binario_a_decimal.png[Binario a decimal, width=500, align=center]
 
 *Conversión entre binario y octal*:: Se sustituye cada dígito octal por su correspondencia en binario expresado con 3 dígitos, o viceversa.
 
@@ -100,12 +100,17 @@ image::conversor-numerico-hexadecimal-a-binario-tabla1-img.png[Tabla binario-hex
 image::conversor-numerico-hexadecimal-a-binario-ejemplo1-img.png[Ejemplo binario-hexadecimal, align=center, width="70%"]
 
 === Código BCD (Binary Coded Decimal)
+[.float-group]
+--
+[.left]
 * NO es un sistema de numeración.
 * Es un método para codificar cifras, no números completos.
 * Para *codificar* un número decimal se sustituye cada una de sus cifras por su equivalente binario de 4 bits.
 * Muy común en sistemas electrónicos donde se debe mostrar un valor numérico.
 
-image::Seven_segment_display-animated.gif[Display 7 segmentos, width=100, align=center]
+[.right]
+image::Seven_segment_display-animated.gif[Display 7 segmentos, width=100]
+--
 
 .Representación binaria de cada dígito decimal:
 [cols=11*~]
@@ -171,7 +176,7 @@ image::tabla_verdad_codificador_4a2.png[Tabla de verdad del codificador 4:2, wid
 
 === Multiplexores y demultiplexores. 
 
-Un *multiplexor* es un circuito combinacional al que entran varios canales de datos, y sólo uno de ellos, el que 
+Un *multiplexor (MUX)* es un circuito combinacional al que entran varios canales de datos, y sólo uno de ellos, el que 
 hayamos seleccionado, es el que aparece por la salida. Es decir, es un circuito que nos permite seleccionar que 
 datos pasan a través de dicho componente.
 
@@ -207,9 +212,11 @@ image::comparador_7485.png[Comparador 7485, width=300, align=center, title=Compa
 
 == Circuitos lógicos secuenciales. 
 
-A diferencia de los sistemas combinacionales, en los *sistemas secuenciales* los valores de las salidas, en un momento dado, no dependen exclusivamente de los valores de las entradas en dicho momento, sino que también dependen del estado anterior o estado interno.
+A diferencia de los sistemas combinacionales, en los *sistemas secuenciales* los valores de las salidas, en un momento dado, no dependen exclusivamente de los valores de las entradas en dicho momento, sino que también dependen del estado anterior del sistema, lo cual quiere decir que poseen memoria.
 
 === Biestables.
+
+Los *biestables* son las células elementales de memoria de los sistemas secuenciales. También son llamados "Flips-Flops". Lo que hacen fundamentalmente es almacenar un bit binario, representado por un estado eléctrico alto o bajo.
 
 
 
