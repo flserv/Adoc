@@ -1,0 +1,5 @@
+= Imágenes
+:icons: font
+:imagesdir: img
+:reproducible:
+:listing-caption: Listing
