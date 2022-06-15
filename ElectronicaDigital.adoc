@@ -11,7 +11,7 @@ Francisco L. Servén <fserven@iesmanacor.cat>
 :revealjs_disablelayout: false
 :customcss: css/paco.css
 :icons: font
-:imagesdir: img
+:imagesdir: https://raw.githubusercontent.com/flserv/Adoc/main/img
 :reproducible:
 :listing-caption: Listing
 :table-caption!:
