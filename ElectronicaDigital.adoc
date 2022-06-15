@@ -1,5 +1,4 @@
 = Unidad 5: Circuitos electrónicos digitales.
-Francisco L. Servén <fserven@iesmanacor.cat>
 :revealjs_theme: moon
 :revealjs_slideNumber: h.v
 :revealjs_width: 1366
@@ -9,7 +8,7 @@ Francisco L. Servén <fserven@iesmanacor.cat>
 :revealjs_maxScale: 1.5
 :revealjs_pdfseparatefragments: false
 :revealjs_disablelayout: false
-:customcss: css/paco.css
+:customcss: https://raw.githubusercontent.com/flserv/Adoc/main/css/paco.css
 :icons: font
 :imagesdir: https://raw.githubusercontent.com/flserv/Adoc/main/img
 :reproducible:
@@ -26,7 +25,7 @@ Francisco L. Servén <fserven@iesmanacor.cat>
 
 
 == Introducción a las técnicas digitales. 
-=== Señál analógica - Señal digital
+=== Señal analógica - Señal digital
 
 image::analogico_digital.png[Señales analógica y digital, width=500, align=center]
 
