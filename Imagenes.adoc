@@ -1,6 +1,6 @@
 = Imágenes
 :icons: font
-:imagesdir: img
+:imagesdir: https://raw.githubusercontent.com/flserv/Adoc/main/img
 :reproducible:
 :listing-caption: Listing
 
@@ -47,3 +47,20 @@ image::tabla_verdad_codificador_4a2.png[Tabla de verdad del codificador 4:2, wid
 
 image::comparador_7485.png[Comparador 7485, width=300, align=center, title=Comparador de 4 bits.]
 
+[cols='2*', unbreakable]
+|=== 
+Imagen 1-1
+|Imagen 1-2
+
+|image:codificador_4a2.png[float="right",align="center"]
+|image:codificador_4a2.png[float="left", align="center"]
+
+|Img 2-1
+|Img 2-2
+
+|image:puertas-logicas.png[align="center"]
+|image:Gray.png[align="center"]
+
+|Añadido extra
+|
+|===
