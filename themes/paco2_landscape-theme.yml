@@ -1,0 +1,35 @@
+extends: default-with-font-fallbacks
+
+font:
+  catalog:
+    merge: true 
+    Comic_Sans:
+      normal: comic-normal.ttf
+      italic: comic-italic.ttf
+      bold: comic-bold.ttf
+      bold_italic: comic-bold_italic.ttf
+#    DroidSansFallback: droid-sans-fallback.ttf
+#  fallbacks:
+#  - DroidSansFallback
+
+base:
+  font_family: Comic_Sans
+  font_size: 16
+
+page:
+  layout: landscape
+
+caption:
+  font-size: 16
+
+footer:
+  recto:
+    center:
+      content: '{page-number} de {page-count}'
+    right:
+      content: 
+  verso:
+    center:
+      content: $footer-recto-center-content
+    left:
+      content: '{empty}'
