@@ -28,7 +28,7 @@ h2,h3,h4,h5,h6{color:var(--secondarycolor) !important;font-family:"Cabin Sketch"
 .title{color:var(--black) !important;font-family:"Architects Daughter",sans-serif;font-style: normal; font-weight: normal;}
 /*a{text-decoration: none;}*/
 p{font-family: "Architects Daughter",sans-serif ! important}
-#toc.toc2 a:link{color:var(--linkcolor); font-family: "Architects Daughter" !important}
+#toc.toc2 a:link{color:var(--linkcolor); font-family: "Cabin Sketch" !important}
 blockquote{color:var(--secondarycolor) !important}
 .quoteblock{color:var(--black)}
 .quoteblock blockquote:before{color:var(--black)}
@@ -40,31 +40,32 @@ pre{background-color: var(--stickynote) !important;color:var(--secondarycolor);f
 th{background-color: var(--maincolor);color:var(--black) !important;}
 td{background-color: var(--maincolor);color: var(--black) !important}
 table.tableblock .title {
-  font-family: "Architects Daughter",sans-serif;font-weight: bold!important;
+  font-family: "Cabin Sketch",sans-serif;font-weight; /*: bold!important; eliminado.*/
 
 }
 
-#toc.toc2{background-color:var(--sidebarbackground);font-family: "Architects Daughter",sans-serif;}
-#toctitle{color:var(--white); font-family: "Cabin Sketch"}
+#toc ul{font-family:"Cabin Sketch",sans-serif;list-style-type:none}
+#toc.toc2{background-color:var(--sidebarbackground);font-family: "Cabin Sketch",sans-serif;}
+#toctitle{color:var(--primarycolor); font-family: "Cabin Sketch"}
 
 /* image caption */
 .imageblock .title {
-  font-family: "Architects Daughter",sans-serif;font-weight: bold!important;
+  font-family: "Cabin Sketch",sans-serif;/* font-weight: bold!important; eliminado.*/
 }
 
 .listingblock .title {
-  font-family: "Architects Daughter",sans-serif;font-weight: bold!important;
+  font-family: "Cabin Sketch",sans-serif;/* font-weight: bold!important; eliminado.*/
 }
 
 .exampleblock .title {
-  font-family: "Architects Daughter",sans-serif;font-weight: bold!important;
+  font-family: "Cabin Sketch",sans-serif;/* font-weight: bold!important; eliminado.*/
 }
 
 .ulist .title {
-  font-family: "Architects Daughter",sans-serif;font-weight: bold!important;
+  font-family: "Cabin Sketch",sans-serif;/*font-weight: bold!important; eliminado.*/
 }
 .olist .title {
-  font-family: "Architects Daughter",sans-serif;font-weight: bold!important;
+  font-family: "Cabin Sketch",sans-serif;/*font-weight: bold!important; eliminado.*/
 }
 
 /* Responsiveness fixes */
