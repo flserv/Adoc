@@ -1,6 +1,6 @@
 = Temas varios para AsciiDoc-pdf.
 
-paco-theme:: fuente Times-Roman y orientación landscape.
-paco2_portrait-theme:: fuente Comic Sans, orientación portrait y números de página al pie en el centro.
-paco2_landscape-theme:: fuente Comic Sans, orientación portrait y números de página al pie en el centro.
+paco-theme:: fuente _Times-Roman_ y orientación landscape.
+paco2_portrait-theme:: fuente _Comic Sans_, orientación portrait y números de página al pie en el centro.
+paco2_landscape-theme:: fuente _Comic Sans_, orientación portrait y números de página al pie en el centro.
 
