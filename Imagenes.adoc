@@ -33,7 +33,7 @@ image::conversor-numerico-hexadecimal-a-binario-tabla1-img.png[Tabla binario-hex
 
 image::conversor-numerico-hexadecimal-a-binario-ejemplo1-img.png[Ejemplo binario-hexadecimal, align=center, width="70%"]
 
-image::Seven_segment_display-animated.gif[Display 7 segmentos, width=100, align=center]
+image::Seven_segment_display-animated.gif[Display 7 segmentos, width=80, align=center]
 
 image::Gray.png[Código Gray, width=700, align=center]
 
