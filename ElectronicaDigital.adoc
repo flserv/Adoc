@@ -55,7 +55,7 @@ Visita https://wbt.siemens.com/sitrain/LOGO-BASIC_ES/story_html5.html?lms=1[esta
 [link=https://wbt.siemens.com/sitrain/LOGO-BASIC_ES/story_html5.html?lms=1,role=external,window=_blank]
 image::web_de_Logo.png[Web de LOGO, width=700, align=center]
 
-=== Sistemas de numeración (cont.).
+=== Sistemas de numeración (continuación).
 
 Sistema de numeración:: es un conjunto de símbolos y reglas de generación que permiten construir todos los números válidos.
 
